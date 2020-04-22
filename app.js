@@ -197,6 +197,10 @@ var controller = (function(budgetCtrl, UICtrl) {
         UICtrl.displayBudget(budget);
     };
 
+    var updatePercentages = function() {
+
+    }
+
     var ctrlAddItem = function () {
         var input, newItem;
         
@@ -210,6 +214,8 @@ var controller = (function(budgetCtrl, UICtrl) {
             UICtrl.clearFields();
 
             updateBudget();
+
+            updatePercentages();
         }
 
     };
@@ -226,6 +232,7 @@ var controller = (function(budgetCtrl, UICtrl) {
             budgetCtrl.deleteItem(type, ID);
             UICtrl.deleteListItem(itemID);
             updateBudget();
+            updatePercentages();
         }
     };
 
