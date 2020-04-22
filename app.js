@@ -26,18 +26,30 @@ var UIController = (function() {
 })();
 
 var controller = (function(budgetCtrl, UICtrl) {
-    var DOM = UICtrl.getDOMstrings();
+    var setupEventListeners = function() {
+        var DOM = UICtrl.getDOMstrings();
+
+        document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem)
+
+        document.addEventListener('keypress', function(e) {
+            if (e.keyCode === 13 || e.which === 13) {
+                ctrlAddItem();
+            }
+        });
+    };
 
     var ctrlAddItem = function () {
         var input = UICtrl.getInput();
         console.log(input)
 
-    }
-    document.querySelector(DOM.inputBtn).addEventListener('click',  ctrlAddItem)
+    };
 
-    document.addEventListener('keypress', function(e) {
-        if (e.keyCode === 13 || e.which === 13) {
-            ctrlAddItem();
+    return {
+        init: function() {
+            setupEventListeners();
         }
-    })
+    }
+
 })(budgetController, UIController);
+
+controller.init();
