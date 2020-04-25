@@ -1,4 +1,4 @@
-# Budgety
+# Budget
 
 Small JavaScript application to manage budget income and expenses.
 
