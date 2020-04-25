@@ -1,0 +1,22 @@
+{
+  "name": "budget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kozlvign/Budget-App.git"
+  },
+  "author": "igor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kozlvign/Budget-App/issues"
+  },
+  "homepage": "https://github.com/Kozlvign/Budget-App",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
