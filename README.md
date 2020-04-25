@@ -47,8 +47,3 @@ Enjoy :)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* [The Complete JavaScript Course](https://www.udemy.com/the-complete-javascript-course/) - Project completed as a part of Udemy Course
-
